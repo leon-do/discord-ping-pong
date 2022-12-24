@@ -1,17 +1,14 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js");
+require("dotenv").config();
 
-const client = new Discord.Client({ 
-  intents: [
-    Discord.GatewayIntentBits.Guilds,
-    Discord.GatewayIntentBits.GuildMessages,
-    Discord.GatewayIntentBits.MessageContent,
-  ] 
+const client = new Discord.Client({
+  intents: [Discord.GatewayIntentBits.Guilds, Discord.GatewayIntentBits.GuildMessages, Discord.GatewayIntentBits.MessageContent],
 });
 
-client.on("messageCreate", message => {
+client.on("messageCreate", (message) => {
   if (message.content === "ping") {
-    message.reply("pong")
+    message.reply("pong");
   }
-})
+});
 
-client.login(process.env.DISCORD_SECRET)
+client.login(process.env.DISCORD_SECRET);

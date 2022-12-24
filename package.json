@@ -1,0 +1,23 @@
+{
+  "name": "discord-ping-pong",
+  "version": "1.0.0",
+  "description": "![](https://user-images.githubusercontent.com/19412160/209448575-9c65017a-e7f6-41c9-bb42-76b913f8a535.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leon-do/discord-ping-pong.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leon-do/discord-ping-pong/issues"
+  },
+  "homepage": "https://github.com/leon-do/discord-ping-pong#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  }
+}
