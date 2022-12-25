@@ -5,9 +5,11 @@ const client = new Discord.Client({
   intents: [Discord.GatewayIntentBits.Guilds, Discord.GatewayIntentBits.GuildMessages, Discord.GatewayIntentBits.MessageContent],
 });
 
-client.on("messageCreate", (message) => {
+client.on("messageCreate", async (message) => {
   if (message.content === "ping") {
-    message.reply("pong");
+    const reply = await message.reply(`🏓`);
+    await reply.react("✅");
+    await reply.react("❌");
   }
 });
 
