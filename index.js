@@ -7,7 +7,7 @@ const client = new Discord.Client({
 });
 
 client.on("messageCreate", async (message) => {
-  console.log(message.content)
+  if (message.author.bot) return; // ignore bots
   if (message.content === "ping") pingPong(message);
 });
 
