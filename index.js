@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 require("dotenv").config();
 const pingPong = require("./routes/pingPong.js");
+require("./daemon");
 
 const client = new Discord.Client({
   intents: [Discord.GatewayIntentBits.Guilds, Discord.GatewayIntentBits.GuildMessages, Discord.GatewayIntentBits.MessageContent],
